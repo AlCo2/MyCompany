@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block test %}
+<h3>are you sure you want to delete:{{job.boss}}</h3>
+<form action="" method="POST">
+    {% csrf_token %}
+    <a href="/">cancle</a>
+    <button>Delete</button>
+</form>
+{% endblock test %}
